@@ -1,0 +1,30 @@
+{
+  "experiences": [
+    {
+      "title": "Software Engineer - Fullstack",
+      "subtitle": "EMCT Company Limited",
+      "workType": "Full-time",
+      "workDescription": [
+        "Develop new features and maintain stability of company products",
+        "Integrate and deploy applications to on-site systems"
+      ],
+      "dateText": "06/2025 – Present"
+    },
+    {
+      "title": "Software Engineer",
+      "subtitle": "Flint Avenue",
+      "workType": "Contractor",
+      "workDescription": ["Delivered software solutions for multiple client organizations through a technology consulting company."],
+      "dateText": "02/2025 – 11/2025"
+    },
+    {
+      "title": "Software Developer",
+      "subtitle": "Netpower Vietnam",
+      "workType": "Intern",
+      "workDescription": [
+        "Learned web development fundamentals, including UI and system design, SOLID principles as well as different technologies like React, .NET,..."
+      ],
+      "dateText": "06/2023 – 09/2023"
+    }
+  ]
+}

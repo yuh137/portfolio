@@ -1,0 +1,39 @@
+{
+    "eyebrow": "About Me",
+    "name": "Huy Nguyen",
+    "role": "Fullstack Engineer",
+    "about": "I am a passionate fullstack engineer with a keen interest in software development, cloud platforms and CI/CD. My goal as an engineer is to deliver comprehensive and on-point solutions for real life problems, placing an emphasis not just on result but also optimization and maintainability. I also love diving deep into the inner workings and fundamental concepts of a technology at use, whether it is a library, framework, tools or an entire architecture with applied algorithms and design patterns, I strive to understand how they work to my best ability.",
+    "imageSource": "images/about/profile2.jpg",
+    "focusAreas": [
+        {
+            "icon": "code",
+            "title": "Fullstack Development",
+            "description": "Building end-to-end applications with a focus on clean, maintainable code."
+        },
+        {
+            "icon": "cloud",
+            "title": "Cloud & CI/CD",
+            "description": "Deploying and automating with modern cloud platforms and delivery pipelines."
+        },
+        {
+            "icon": "architecture",
+            "title": "Architecture & Optimization",
+            "description": "Designing systems with the right algorithms, patterns and performance in mind."
+        }
+    ],
+    "tags": [
+        "C#",
+        ".NET",
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Azure",
+        "SQL Server",
+        "Design Patterns"
+    ],
+    "stats": [
+        { "value": "2+", "label": "Years Coding" },
+        { "value": "10+", "label": "Projects Built" },
+        { "value": "10+", "label": "Technologies" }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "projects" : [
+        {
+            "title": "BDPark - parking management for admin and customers",
+            "bodyText": "- Bill calculation, parking history and gate/LPR/CCTV control\n -  Registering discounts, season tickets and monitor spending\n - Card payment handling using PaymentKorea and Smartro.\n - Connecting POS to VAN for user IC card I/O interactions and payment processes.\n",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://bdpark.kr"
+                }
+            ],
+            "tags" : [
+                ".NET",
+                "React",
+                "Payment",
+                "Websocket",
+                "WPF",
+                "ffmpeg",
+                "REST API",
+                "Threading",
+                "Serial communications"
+            ]
+        },
+        {
+            "title": "BDApp - fire panel control",
+            "bodyText": "- User interface for staffs to monitor and control statuses of fire sensors in a building.\n - Central on-premise server managing IOT controllers and receiving real-time data for display and control.\n - Using FCM/APNS server for transfering push notifications.\n - Multiplatform app development using MAUI",
+            "tags" : [
+                ".NET",
+                ".NET MAUI",
+                "WPF",
+                "React",
+                "Typescript",
+                "Websocket",
+                "Android/IOS",
+                "REST API",
+                "EntityFramework",
+                "IdentityServer"
+            ]
+        },
+        {
+            "title": "BDAdmin - internal tool for services management",
+            "bodyText": "- Internal admin dashboard for configurations, locations and settings of BDApp and BDPark services.\n - Manage users, connections, metrics, controller health and send test push notifications,...\n - Database, logs and realtime data management.",
+            "tags" : [
+                "React",
+                "Typescript",
+                "Tailwindcss",
+                "WebSocket",
+                "REST API",
+                "JWT",
+                "oidc",
+                "jotai"
+            ]
+        },
+        {
+            "title": "Medical Information Simulations - Medical Tests QC Software",
+            "bodyText": "- Simulation for medical test quality controls in pathogenic labs.\n - Manage quality control tests in a database, print PDF, record past metrics.\n - Built for teachers and students to practice on real pathogen lab processes.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/yuh137/medical_information_simulation"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Tailwindcss",
+                ".NET",
+                "REST API",
+                "EntityFramework",
+                "IdentityServer"
+            ]
+        },
+        {
+            "title": "GeneHub",
+            "bodyText": "- A search engine for Genes, Diseases and Pathogens, data linked directly to US government websites.\n - Search information about diseases, clinical trials, symptomps and treatments.",
+            "tags" : [
+                "React",
+                "TailwindCSS",
+                ".NET",
+                "REST API",
+                "EntityFramework"
+            ]
+        },
+        {
+            "title": "Tea2Go",
+            "bodyText": "- A tea shop ordering platform built with React Native and a React admin dashboard.\n - Customers browse nearby locations via Google Maps, authenticate with OAuth and make payments using in-app purchases.\n - Manages store locations, holiday hours, convenience fees, and scheduled push notifications.",
+            "tags" : [
+                "React",
+                "React Native",
+                "Material UI",
+                "Firestore",
+                "FirebaseAuth"
+            ]
+        }
+    ]
+}

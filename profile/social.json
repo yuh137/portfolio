@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/huy-nguyen-4b4197247/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/yuh137"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:nquochuy137@gmail.com"
+        }
+    ]
+}

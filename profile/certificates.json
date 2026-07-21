@@ -1,0 +1,15 @@
+{
+    "title": "Certificates",
+    "certificates": [
+        {
+            "title": "Academic IETLTS",
+            "image": "images/education/IELTSlogo.png",
+            "link": "https://drive.google.com/file/d/1EGihwLeSeTXDBQGpXP0lNd-AmWhhifQp/view?usp=sharing"
+        },
+        {
+            "title": "Duolingo English Test",
+            "image": "images/education/det.png",
+            "link": "https://drive.google.com/file/d/1osexVNtdKrPQH7dM6x8NOxqG_8keMfA7/view?usp=sharing"
+        }
+    ]
+}
