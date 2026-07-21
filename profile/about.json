@@ -12,8 +12,8 @@
         },
         {
             "icon": "cloud",
-            "title": "Cloud & CI/CD",
-            "description": "Deploying and automating with modern cloud platforms and delivery pipelines."
+            "title": "On premise and Cloud deployment",
+            "description": "Deploying and maintaining products with modern cloud platforms and on-premise servers."
         },
         {
             "icon": "architecture",
