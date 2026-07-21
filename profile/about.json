@@ -17,7 +17,7 @@
         },
         {
             "icon": "architecture",
-            "title": "Architecture & Optimization",
+            "title": "Architecture & Design",
             "description": "Designing systems with the right algorithms, patterns and performance in mind."
         }
     ],
