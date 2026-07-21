@@ -1,0 +1,225 @@
+.about-wrapper {
+    text-align: left;
+    padding: 8px 0 16px;
+}
+
+/* ---------- Heading block ---------- */
+.about-eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--about-accent, #3D84C6);
+    margin-bottom: 12px;
+}
+
+.about-heading {
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.about-heading-accent {
+    color: var(--about-accent, #3D84C6);
+}
+
+.about-intro {
+    font-size: 1.12em;
+    font-weight: 500;
+    line-height: 1.75;
+    white-space: pre-wrap;
+    opacity: 0.9;
+}
+
+.about-intro p {
+    margin-bottom: 0;
+}
+
+/* ---------- Tech tags ---------- */
+.about-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.about-tag {
+    padding: 5px 14px;
+    font-size: 0.85em;
+    font-weight: 500;
+    border-radius: 999px;
+    border: 1px solid var(--about-accent, #3D84C6);
+    color: var(--about-accent, #3D84C6);
+    background: rgba(61, 132, 198, 0.08);
+}
+
+/* ---------- Profile image ---------- */
+.about-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image-frame {
+    position: relative;
+    padding: 12px;
+    display: inline-block;
+}
+
+.about-image-frame::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-top: 3px solid var(--about-accent, #3D84C6);
+    border-left: 3px solid var(--about-accent, #3D84C6);
+    border-top-left-radius: 8px;
+}
+
+.about-image-frame::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-bottom: 3px solid var(--about-accent, #3D84C6);
+    border-right: 3px solid var(--about-accent, #3D84C6);
+    border-bottom-right-radius: 8px;
+}
+
+.about-image-frame img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- Stats strip ---------- */
+.about-stats {
+    margin-top: 40px;
+    padding: 24px 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.25);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    text-align: center;
+}
+
+.about-stat-value {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--about-accent, #3D84C6);
+    line-height: 1;
+}
+
+.about-stat-label {
+    margin-top: 6px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+}
+
+/* ---------- Focus cards ---------- */
+.about-focus {
+    margin-top: 40px;
+}
+
+.about-focus-card {
+    height: 100%;
+    padding: 26px 22px;
+    border-radius: 12px;
+    background: rgba(128, 128, 128, 0.07);
+    border: 1px solid rgba(128, 128, 128, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.about-focus-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--about-accent, #3D84C6);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.about-focus-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    color: var(--about-accent, #3D84C6);
+    background: rgba(61, 132, 198, 0.12);
+    margin-bottom: 16px;
+}
+
+.about-focus-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.about-focus-title {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.about-focus-text {
+    font-size: 0.95em;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    .about-wrapper {
+        text-align: left;
+        padding: 0 8px;
+    }
+
+    .about-heading {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .about-eyebrow {
+        display: block;
+        text-align: center;
+    }
+
+    .about-intro {
+        font-size: 1.02em;
+    }
+
+    .about-tags {
+        justify-content: center;
+    }
+
+    .about-image-col {
+        margin-top: 28px;
+    }
+
+    .about-image-frame img {
+        max-width: 100%;
+    }
+
+    .about-stats {
+        margin-top: 32px;
+    }
+
+    .about-stat-value {
+        font-size: 1.6em;
+    }
+
+    .about-focus-card {
+        text-align: center;
+    }
+
+    .about-focus-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

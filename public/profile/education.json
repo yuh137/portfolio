@@ -1,0 +1,27 @@
+{
+    "education":[
+        {
+            "title": "July 2024 - Jan 2025",
+            "cardTitle": "Doctor of Computer Science - Admitted",
+            "cardSubtitle":"Texas Tech University",
+            "cardDetailedText": "Finished first semester, left due to financial and school policy constraint",
+            "icon" : {
+                "src": "images/education/texastech.png"
+            }
+        },
+        {
+            "title": "2020 - 2024",
+            "cardTitle": "Bachelor of Computer Science",
+            "cardSubtitle":"Ho Chi Minh University of Technology",
+            "cardDetailedText": "GPA - 3.0",
+            "icon" : {
+                "src": "images/education/bachkhoa.png"
+            }
+        },
+        {
+            "title": "2017 - 2020",
+            "cardTitle": "High School",
+            "cardSubtitle":"Le Quy Don High School for the gifted"
+        }
+    ]
+}
