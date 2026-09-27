@@ -22,3 +22,6 @@ next-env.d.ts
 
 # local tooling
 /.claude/
+
+# cloudflare wrangler local state
+/.wrangler/

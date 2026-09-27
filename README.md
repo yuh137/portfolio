@@ -1,7 +1,7 @@
 # neradev.com
 
 Personal portfolio of Huy Nguyen. Static site built with Next.js (App Router, static
-export), TypeScript and Tailwind CSS, deployed to Cloudflare Pages at https://neradev.com.
+export), TypeScript and Tailwind CSS, deployed to Cloudflare Workers at https://neradev.com.
 
 ## Editing content
 
@@ -25,16 +25,18 @@ npx serve out      # preview the export with clean URLs
 
 ## Deploy
 
-Cloudflare Pages, connected to this repository.
+Cloudflare Workers with static assets, connected to this repository (Workers Builds).
+`wrangler.jsonc` tells the Worker to serve `./out`; there is no server code.
 
 | Setting | Value |
 |---|---|
 | Production branch | `main` |
 | Build command | `npm run build` |
-| Build output directory | `out` |
-| Environment variable | `NODE_VERSION=22` |
+| Deploy command | `npx wrangler deploy` |
+| Build variable | `NODE_VERSION=22` |
 
 Custom domain `neradev.com` (apex) plus a redirect rule from `www.neradev.com`.
+Preview the Worker locally after a build with `npx wrangler dev`.
 
 ## Design credits
 

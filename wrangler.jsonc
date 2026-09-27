@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers config. The site is a static Next.js export (`npm run build`
+  // writes it to ./out), so the Worker has no script: it only serves those files.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./out",
+    // /about is served from about.html; unknown paths get out/404.html with a 404 status.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
