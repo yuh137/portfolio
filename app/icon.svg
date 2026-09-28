@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>hn. mark, Huy Nguyen</title>
+  <circle cx="32" cy="32" r="32" fill="#0F172A"/>
+  <g fill="none" stroke="#E1E7EF" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 21V42M14 31.5c0-3.3 2.2-5.5 5-5.5s5 2.2 5 5.5V42"/>
+    <path d="M31.5 42V26.5M31.5 31.5c0-3.3 2.2-5.5 5-5.5s5 2.2 5 5.5V42"/>
+  </g>
+  <circle cx="50" cy="39.4" r="3.4" fill="#639CF8"/>
+</svg>

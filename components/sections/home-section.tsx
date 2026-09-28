@@ -30,7 +30,7 @@ export function HomeSection({
     <AnimatedSection
       id={id}
       className={cn(
-        "my-10 space-y-8 rounded-2xl py-10 md:my-14",
+        "my-6 space-y-8 rounded-2xl py-8 md:my-10 md:py-10",
         muted && "bg-muted/60 px-4 sm:px-6 md:px-10"
       )}
     >

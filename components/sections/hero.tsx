@@ -11,8 +11,10 @@ import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
-    <section className="flex min-h-[calc(100vh-5rem)] items-center pb-12 pt-6 md:pb-16">
-      <div className="mx-auto -mt-12 flex max-w-[64rem] flex-col items-center gap-4 text-center">
+    // Full-screen only from md up. On phones the content is taller than the screen, so a
+    // min-height plus vertical centring (or a negative margin) pushes it under the header.
+    <section className="flex items-center pb-6 pt-6 md:min-h-[calc(100svh-5rem)] md:pb-8">
+      <div className="mx-auto flex max-w-[64rem] flex-col items-center gap-4 text-center">
         <AnimatedText delay={0}>
           <Image
             src="/profile.jpg"
@@ -81,7 +83,7 @@ export function Hero() {
           <SocialLinks />
         </AnimatedText>
         <AnimatedText delay={1.2}>
-          <Icons.chevronDown className="mt-6 h-6 w-6 animate-bounce text-muted-foreground" />
+          <Icons.chevronDown className="mt-4 h-6 w-6 animate-bounce text-muted-foreground" />
         </AnimatedText>
       </div>
     </section>

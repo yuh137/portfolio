@@ -34,7 +34,7 @@ const fontBrand = Norican({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} · ${siteConfig.title}`,
+    default: siteConfig.homeTitle,
     template: `%s · ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: `${siteConfig.name} · ${siteConfig.title}`,
+    title: siteConfig.homeTitle,
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [{ url: "/og.png", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} · ${siteConfig.title}`,
+    title: siteConfig.homeTitle,
     description: siteConfig.description,
     images: ["/og.png"],
   },

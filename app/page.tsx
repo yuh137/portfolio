@@ -12,7 +12,7 @@ import { experiences, featuredProjects, featuredSkills } from "@/config/resume";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} · ${siteConfig.title}`,
+  title: { absolute: siteConfig.homeTitle },
   description: siteConfig.description,
   alternates: { canonical: siteConfig.url },
 };

@@ -1,6 +1,8 @@
 export const siteConfig = {
   name: "Huy Nguyen",
   title: "Fullstack Engineer",
+  // Home page and social-share title. Inner pages use "<Page> · Huy Nguyen" (see brand.md).
+  homeTitle: "Huy Nguyen · Fullstack Engineer (React, .NET)",
   url: "https://neradev.com",
   description:
     "Huy Nguyen, fullstack engineer in Ho Chi Minh City. Two years delivering web, mobile, desktop and IoT products with React, .NET and Node.js, from requirements to production.",
