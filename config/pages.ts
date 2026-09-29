@@ -28,6 +28,6 @@ export const pagesConfig: Record<
   },
   education: {
     title: "Education",
-    description: "Degree, certifications and languages.",
+    description: "Degree, graduate studies, certifications and languages.",
   },
 };

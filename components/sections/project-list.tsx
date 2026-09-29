@@ -71,7 +71,9 @@ export function ProjectCard({
             </span>
             <span className="inline-flex items-center gap-1">
               <Icons.briefcase className="h-3.5 w-3.5" />
-              {project.employer}
+              <span>
+                {project.creditLabel ?? "Employer"}: {project.employer}
+              </span>
             </span>
             {project.role && <span>· {project.role}</span>}
           </p>

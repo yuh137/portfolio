@@ -6,11 +6,11 @@ export function EducationCards({ education }: { education: Education[] }) {
   return (
     <div className="space-y-6">
       {education.map((edu, index) => (
-        <AnimatedSection key={edu.degree} delay={0.1 * index}>
+        <AnimatedSection key={edu.title} delay={0.1 * index}>
           <article className="rounded-lg border bg-card p-5 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-6">
             <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
               <div>
-                <h3 className="text-lg font-semibold sm:text-xl">{edu.degree}</h3>
+                <h3 className="text-lg font-semibold sm:text-xl">{edu.title}</h3>
                 <p className="text-base text-brand sm:text-lg">
                   {edu.school}{" "}
                   <span className="text-muted-foreground">({edu.schoolShort})</span>

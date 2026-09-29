@@ -1,6 +1,6 @@
 /**
  * Single source of truth for all site content.
- * Mirrors knowledge/profile/Huy Nguyen_Resume.pdf (September 2026). When the resume
+ * Mirrors knowledge/profile/"Huy Nguyen - Resume.pdf" (30 September 2026). When the resume
  * changes, change this file; nothing else on the site hard-codes these facts.
  */
 
@@ -27,7 +27,9 @@ export interface Project {
   name: string;
   tagline: string;
   period: string;
+  /** Who the work was for, labelled as on the resume ("Employer: …" or "Client: …"). */
   employer: string;
+  creditLabel?: "Employer" | "Client" | "Client & Employer";
   role?: string;
   description: string;
   responsibilities: string[];
@@ -38,7 +40,10 @@ export interface Project {
 }
 
 export interface Education {
-  degree: string;
+  /** Degree or programme name, e.g. "Bachelor of Computer Engineering". */
+  title: string;
+  /** True only for a degree actually awarded. The About page shows the awarded degree. */
+  awarded: boolean;
   school: string;
   schoolShort: string;
   location: string;
@@ -98,6 +103,7 @@ export const experiences: Experience[] = [
     id: "emct",
     role: "Fullstack Engineer",
     company: "EMCT Company Limited",
+    companyUrl: "",
     location: "Ho Chi Minh City, Vietnam",
     start: "Jun 2025",
     end: "Present",
@@ -216,7 +222,13 @@ export const projects: Project[] = [
     responsibilities: [
       "Fixed defects, developed and shipped new features, and delivered updates to the client on schedule.",
     ],
-    technologies: ["React Native", "React", "Firebase", "Firestore", "JavaScript / TypeScript"],
+    technologies: [
+      "React Native",
+      "React",
+      "Firebase",
+      "Firestore",
+      "JavaScript / TypeScript",
+    ],
     links: [],
     featured: false,
   },
@@ -225,7 +237,8 @@ export const projects: Project[] = [
     name: "Medical Information Simulations",
     tagline: "Medical tests QC software",
     period: "Feb 2024 - May 2025",
-    employer: "Dr Carter & Flint Avenue",
+    employer: "Dr. Carter & Flint Avenue",
+    creditLabel: "Client & Employer",
     description:
       "A simulation of medical test quality control, used as a teaching tool for TTUHSC students in collaboration with Dr. Carter of TTUHSC. Placed 2nd in the TTUHSC Innovation Hub 2023 iLaunch Competition.",
     responsibilities: [
@@ -258,12 +271,21 @@ export const projects: Project[] = [
     tagline: "Genes, diseases and pathogens search engine",
     period: "Apr 2024 - Jan 2025",
     employer: "Dr. Tetyana (TTUHSC)",
+    creditLabel: "Client",
     description:
       "A search engine for genes, diseases and pathogens, a collaboration with Dr. Tetyana from TTUHSC. A clean, graphical site where medical students can search for disease information from official government sources.",
     responsibilities: [
       "Analysed requirements, designed the system and built the full stack, turning the client's concept into a working product.",
     ],
-    technologies: ["React", "Redux", "Ant Design", "Tailwind", ".NET 8", "SQL Server", "Azure"],
+    technologies: [
+      "React",
+      "Redux",
+      "Ant Design",
+      "Tailwind",
+      ".NET 8",
+      "SQL Server",
+      "Azure",
+    ],
     links: [],
     featured: false,
   },
@@ -271,7 +293,20 @@ export const projects: Project[] = [
 
 export const education: Education[] = [
   {
-    degree: "Bachelor of Computer Engineering",
+    title: "Doctoral Studies in Computer Science",
+    awarded: false,
+    school: "Texas Tech University",
+    schoolShort: "TTU",
+    location: "Lubbock, Texas",
+    period: "Aug 2024 - Jan 2025",
+    bullets: [
+      "Completed one semester of PhD coursework as a funded Research Assistant, and completed several collaborative software development projects.",
+      "Left the program to pursue software engineering full-time.",
+    ],
+  },
+  {
+    title: "Bachelor of Computer Engineering",
+    awarded: true,
     school: "Ho Chi Minh City University of Technology",
     schoolShort: "HCMUT",
     location: "Ho Chi Minh City, Vietnam",
@@ -347,7 +382,6 @@ export const skillGroups: SkillGroup[] = [
       "WebSocket",
       "WebRTC",
       "JWT",
-      "OpenID Connect",
       "MySQL",
       "PostgreSQL",
       "SQL Server",
@@ -360,7 +394,7 @@ export const skillGroups: SkillGroup[] = [
     description: "Where the products above actually run.",
     items: [
       "Azure App Services",
-      "Azure SQL",
+      "Azure SQL Server",
       "AWS S3",
       "Cloudflare Tunnel",
       "Docker",
@@ -421,3 +455,6 @@ export const featuredSkills = [
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
+
+/** The degree actually awarded, for places that show one line of education. */
+export const awardedDegree = education.find((e) => e.awarded) ?? education[0];

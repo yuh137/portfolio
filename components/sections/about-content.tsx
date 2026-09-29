@@ -11,7 +11,7 @@ import {
 import { buttonVariants } from "@/components/ui/button";
 import { ChipList } from "@/components/ui/chip";
 import {
-  education,
+  awardedDegree,
   featuredSkills,
   focusAreas,
   languages,
@@ -25,7 +25,7 @@ const facts = [
   {
     icon: Icons.graduation,
     label: "Education",
-    value: `${education[0].degree}, ${education[0].schoolShort}`,
+    value: `${awardedDegree.title}, ${awardedDegree.schoolShort}`,
   },
   {
     icon: Icons.languages,

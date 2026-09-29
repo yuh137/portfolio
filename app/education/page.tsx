@@ -30,7 +30,7 @@ export default function EducationPage() {
       <div className="space-y-16">
         <SectionGrid>
           <SectionAside>
-            <SectionHeading eyebrow="Degree" title="Computer Engineering at HCMUT" />
+            <SectionHeading eyebrow="Studies" title="HCMUT and Texas Tech" />
           </SectionAside>
           <div className="lg:col-span-8">
             <EducationCards education={education} />
